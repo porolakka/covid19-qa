@@ -49,7 +49,7 @@ const config = {
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://www.khma-covid19.org/'>Original </a><div class='greenCircle'></div><a href='https://www.khma-covid19.org/links-1'>Q&A Search</a>",
+      "<a href='https://www.khma-covid19.org/'>Original </a><div class='greenCircle'></div><a href='https://www.khma-covid19.org/links-1'>Qontextual</a>",
   },
   siteMetadata: {
     title: '在宅・福祉施設向け 新型コロナウイルス（COVID-19） Q&Aサイト',
