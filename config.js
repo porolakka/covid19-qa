@@ -6,7 +6,6 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    start_url: '/',
     logo: 'src/images/Logo_CovidMatome.png',
     logoLink: 'https://hasura.io/learn/1',
     title:
