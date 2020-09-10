@@ -6,10 +6,11 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    start_url: '/',
+    logo: 'src/images/Logo_CovidMatome.png',
+    logoLink: 'https://hasura.io/learn/1',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
+      "<a href='https://hasura.io/learn/2'><img class='img-responsive' src='./src/images/Logo_CovidMatome.png' alt='Learn logo' /></a>",
     githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
     helpUrl: '',
     tweetText: '',
