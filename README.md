@@ -12,6 +12,9 @@ NPO法人関西健康・医療学術連絡会が2020年4月に公開した在宅
 # 運用方法
 Gatsby.js+Markdownで静的サイトを生成し、Netlifyでホストしています。GitHubでコード管理しており、関係者は記事をオンラインで編集の提案ができます。
 
+# QA一覧表
+GitHubの[porolakka/khma-covid19-qa](https://github.com/porolakka/khma-covid19-qa)に[qa-table.csv](https://github.com/porolakka/khma-covid19-qa/blob/master/qa-table.csv)として一覧表を公開しています。
+
 # ライセンス
 ## コンテンツ
 元サイトのライセンスを継承し、本文と図表はCC BY-SA 4.0とします。
