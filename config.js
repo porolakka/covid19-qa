@@ -1,15 +1,15 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://romantic-heisenberg-2e141f.netlify.app/',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
     logo: 'https://user-images.githubusercontent.com/10286653/92694366-e960fe00-f381-11ea-8a92-4dad1146b833.png',
-    logoLink: 'https://hasura.io/learn/1',
+    logoLink: 'https://romantic-heisenberg-2e141f.netlify.app/',
     title:
-      "<a href='https://hasura.io/learn/2'>新型コロナ情報まとめサイト</a>",
+      "<a href='https://romantic-heisenberg-2e141f.netlify.app/'>新型コロナ情報まとめサイト</a>",
     githubUrl: 'https://github.com/porolakka/covid19-qa',
     helpUrl: '',
     tweetText: '',
