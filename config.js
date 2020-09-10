@@ -6,24 +6,17 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: 'src/images/Logo_CovidMatome.png',
+    logo: 'https://user-images.githubusercontent.com/10286653/92694366-e960fe00-f381-11ea-8a92-4dad1146b833.png',
     logoLink: 'https://hasura.io/learn/1',
     title:
-      "<a href='https://hasura.io/learn/2'><img class='img-responsive' src='./src/images/Logo_CovidMatome.png' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+      "<a href='https://hasura.io/learn/2'>在宅・福祉施設向け新型コロナ（COVID-19）情報まとめサイト</a>",
+    githubUrl: 'https://github.com/porolakka/covid19-qa',
     helpUrl: '',
     tweetText: '',
     social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
+		    <a href="https://twitter.com/khmacovid19" target="_blank" rel="noopener">
 		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
+		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
 		      </div>
 		    </a>
 		  </li>`,
@@ -38,8 +31,16 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/basicprevention', // add trailing slash if enabled above
+      '/disinfection',
+      '/mask',
+      '/homerecuperation',
+      '/outbreakprevention',
+      '/covid19confirmation',
+      '/underlyingdisease',
+      '/switchtohome',
+      '/commuter',
+      '/hrm',
     ],
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
@@ -48,7 +49,7 @@ const config = {
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+      "<a href='https://www.khma-covid19.org/'>Original </a><div class='greenCircle'></div><a href='https://www.khma-covid19.org/links-1'>Q&A Search</a>",
   },
   siteMetadata: {
     title: 'Gatsby Gitbook Boilerplate | Hasura',
