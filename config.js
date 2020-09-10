@@ -10,7 +10,7 @@ const config = {
     logoLink: 'https://covid19-qa.netlify.app/',
     title:
       "<a href='https://covid19-qa.netlify.app/'>新型コロナ情報まとめサイト</a>",
-    githubUrl: 'https://github.com/porolakka/covid19-qa',
+    githubUrl: 'https://github.com/porolakka/covid19-qa/tree/master',
     helpUrl: '',
     tweetText: '',
     social: `<li>
@@ -59,7 +59,7 @@ const config = {
     title: '在宅・福祉施設向け 新型コロナウイルス（COVID-19） Q&Aサイト',
     description: 'NPO法人関西健康・医療学術連絡会が2020年4月に公開した在宅・福祉施設向けの「新型コロナウイルス(COVID-19)情報まとめサイト」をもとにして Gatsby.js+Markdownで静的サイトを生成し、GitHubでホストしている保存用サイトです。',
     ogImage: null,
-    docsLocation: 'https://github.com/porolakka/covid19-qa/master/content',
+    docsLocation: 'https://github.com/porolakka/covid19-qa/tree/master/content',
     favicon: 'https://raw.githubusercontent.com/porolakka/covid19-qa/master/src/components/images/favicon.ico?token=ACOPMPJTM26NMH56JV5FB7C7LHNIE',
   },
   pwa: {
