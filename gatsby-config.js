@@ -1,12 +1,12 @@
 require("dotenv").config();
 const queries = require("./src/utils/algolia");
 const config = require("./config");
-const siteConfig = require("./data/siteConfig");
 const plugins = [
   {
     resolve: "gatsby-plugin-google-analytics",
     options: {
-      trackingId: siteConfig.googleAnalyticsID
+      trackingId: process.env.UA-177654836-1,
+      head: true,
     }
   },
   'gatsby-plugin-sitemap',
