@@ -1,146 +1,43 @@
-# gatsby-gitbook-starter
+# 概要
+～感染予防についての信頼すべき情報を分かりやすく届けたい～  
 
-Kick off your project with this starter to create a powerful/flexible docs/tutorial web apps.
+NPO法人関西健康・医療学術連絡会が2020年4月に公開した  
+在宅・福祉施設向けの「新型コロナウイルス(COVID-19)情報まとめサイト」をもとにして
+Gatsby.js+Markdownで静的サイトを生成し、GitHubでホストしている保存用サイトです。
 
-![gatsby-gitbook-starter](https://graphql-engine-cdn.hasura.io/learn-hasura/gatsby-gitbook-starter/assets/documentation_app_blog.png)
+# ライセンス
+## コンテンツ
+元サイトのライセンスを継承し、本文と図表はCC BY-SA 4.0とします。
+ただし、リンク先（文書、論文、ビデオなど）は対象外です。個別のライセンスを確認してください。
 
-## Motivation
+## サイトのテンプレートについて
+Gatsby.jsのテンプレート「[gatsby-gitbook-starter](https://github.com/hasura/gatsby-gitbook-starter)」(MITライセンス)を使用しています。  
+Markdown記法でコンテンツを作成し、ブック形式のウェブアプリを作成できます。  
 
-We wanted to create a [GraphQL tutorial](https://learn.hasura.io) series. The content would be written by developers for various languages/frameworks and what better than writing it in Markdown! And since this is a tutorial series we also needed rich embeds, syntax highlighting and more customisations.
+# 元サイトについて
+## 目的
+新型コロナウイルスが感染拡大する中、在宅・福祉施設の現場が疑問に感じている項目を整理し、信頼性の高い情報を提供する必要があり、様々な情報を整理した「新型コロナウイルス(COVID-19)まとめサイト」です。
 
-We also wanted to serve these tutorials in sub paths of [learn.hasura.io](https://learn.hasura.io). To serve all these requirements, we decided to use Gatsby + MDX (Markdown + JSX) to extend markdown and used a neat consistent theme like the one at [GitBook](https://www.gitbook.com) and deployed as docker containers.
+## 特徴
+本サイトは在宅・福祉施設の責任ある立場の方が読むことを念頭に置いています。公的機関等の情報を要約整理し、感染症や呼吸器専門医の協力を得て精査した内容をQ&A形式で公開しています。
 
-## 🔥 Features
-- Write using Markdown / [MDX](https://github.com/mdx-js/mdx)
-- GitBook style theme
-- Syntax Highlighting using Prism [`Bonus`: Code diff highlighting]
-- Search Integration with Algolia
-- Progressive Web App, Works Offline
-- Google Analytics Integration
-- Automatically generated sidebar navigation, table of contents, previous/next
-- Dark Mode toggle
-- Edit on Github
-- Fully customisable
-- Rich embeds and live code editor using MDX
-- Easy deployment: Deploy on Netlify / Now.sh / Docker
+## 使い方
+質問をクリックすると、回答が表示されます。より詳しい内容が知りたい場合、各記事の参考文献をご確認ください。
 
-## 🔗 Live Demo
+# 元サイトのクレジット
+## 監修
+京都大学大学院医学研究科呼吸器内科  
+教授　平井豊博、講師　伊藤功朗
 
-Here's a [live demo](https://learn.hasura.io/graphql/react)
+## 協力
+京都大学大学院医学研究科呼吸器内科  
+大井一成、濱尾信叔、白田全弘、西岡憲亮
 
-## 🚀 Quickstart
-
-Get started by running the following commands:
-
-```
-$ git clone git@github.com:hasura/gatsby-gitbook-starter.git
-$ cd gatsby-gitbook-starter
-$ npm install
-$ npm start
-```
-
-Visit `http://localhost:8000/` to view the app.
-
-## 🔧 Configure
-
-Write markdown files in `content` folder.
-
-Open `config.js` for templating variables. Broadly configuration is available for `gatsby`, `header`, `sidebar` and `siteMetadata`.
-
-- `gatsby` config for global configuration like 
-    - `pathPrefix` - Gatsby Path Prefix
-    - `siteUrl` - Gatsby Site URL
-    - `gaTrackingId` - Google Analytics Tracking ID
-
-- `header` config for site header configuration like
-    - `title` - The title that appears on the top left
-    - `githubUrl` - The Github URL for the docs website
-    - `helpUrl` - Help URL for pointing to resources
-    - `tweetText` - Tweet text
-    - `links` - Links on the top right
-    - `search` - Enable search and [configure Algolia](https://www.gatsbyjs.org/docs/adding-search-with-algolia/)
-
-- `sidebar` config for navigation links configuration
-    - `forcedNavOrder` for left sidebar navigation order. It should be in the format "/<filename>"
-    - `frontLine` - whether to show a front line at the beginning of a nested menu.(Collapsing capability would be turned of if this option is set to true)
-    - `links` - Links on the bottom left of the sidebar
-    - `ignoreIndex` - Set this to true if the index.md file shouldn't appear on the left sidebar navigation. Typically this can be used for landing pages.
-
-- `siteMetadata` config for website related configuration
-    - `title` - Title of the website
-    - `description` - Description of the website
-    - `ogImage` - Social Media share og:image tag
-    - `docsLocation` - The Github URL for Edit on Github
-
-- For sub nesting in left sidebar, create a folder with the same name as the top level `.md` filename and the sub navigation is auto-generated. The sub navigation is alphabetically ordered.
-
-### Algolia Configuration
-
-To setup Algolia, go to `config.js` and update the `search` object to look like the one below:
-
-```...,
-	"search": {
-		"enabled": true,
-		"indexName": "MY_INDEX_NAME",
-		"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
-		"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-		"algoliaAdminKey": process.env.ALGOLIA_ADMIN_KEY
-	},
-```
-
-Values for Algolia App ID, Search Key, and Admin Key can be obtained from Algolia Dashboard with the right set of permissions. Replace `MY_INDEX_NAME` with the Algolia Index name of your choice. To build the Algolia index, you need to run `npm run build` which will do a gatsby build along with content indexing in Algolia.
-
-### Progressive Web App, Offline
-
-To enable PWA, go to `config.js` and update the `pwa` object to look like the one below:
-
-```
-   "pwa": {
-        "enabled": false, // disabling this will also remove the existing service worker.
-        "manifest": {
-            "name": "Gatsby Gitbook Starter",
-            "short_name": "GitbookStarter",
-            "start_url": "/",
-            "background_color": "#6b37bf",
-            "theme_color": "#6b37bf",
-            "display": "standalone",
-            "crossOrigin": "use-credentials",
-            icons: [
-                {
-                    src: "src/pwa-512.png",
-                    sizes: `512x512`,
-                    type: `image/png`,
-                },
-            ],
-        },
-    }
-```
-
-## Live Code Editor
-
-To render react components for live editing, add the `react-live=true` to the code section. For example:
-
-```javascript react-live=true
-<button>Edit my text</button>
-```
-
-In the above code, just add `javascript react-live=true` after the triple quote ``` to start rendering react components that can be edited by users.
-
-## 🤖 SEO friendly
-
-This is a static site and comes with all the SEO benefits. Configure meta tags like title and description for each markdown file using MDX Frontmatter
-
-```markdown
----
-title: "Title of the page"
-metaTitle: "Meta Title Tag for this page"
-metaDescription: "Meta Description Tag for this page"
----
-```
-
-Canonical URLs are generated automatically.
+## サイト作成協力
+落合陽、落合正晴、池田功平、三光楼茉澄  
+Code for AICHI 吉岡三善、Code for Japan STOプロジェクト 菅野晶仁
 
 ## ☁️ Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hasura/gatsby-gitbook-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/porolakka/covid19-qa.md)
 
