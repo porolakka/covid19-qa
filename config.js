@@ -1,15 +1,15 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://romantic-heisenberg-2e141f.netlify.app/',
+    siteUrl: 'https://covid19-qa.netlify.app/',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
     logo: 'https://user-images.githubusercontent.com/10286653/92694366-e960fe00-f381-11ea-8a92-4dad1146b833.png',
-    logoLink: 'https://romantic-heisenberg-2e141f.netlify.app/',
+    logoLink: 'https://covid19-qa.netlify.app/',
     title:
-      "<a href='https://romantic-heisenberg-2e141f.netlify.app/'>新型コロナ情報まとめサイト</a>",
+      "<a href='https://covid19-qa.netlify.app/'>新型コロナ情報まとめサイト</a>",
     githubUrl: 'https://github.com/porolakka/covid19-qa',
     helpUrl: '',
     tweetText: '',
@@ -45,7 +45,11 @@ const config = {
     collapsedNav: [
       '/codeblock', // add trailing slash if enabled above
     ],
-    links: [{text: '元サイト(khma-covid19.org)', link: 'https://www.khma-covid19.org/'},{text: '元サイトのFacebookページ', link: 'https://www.facebook.com/khmacovid19taskforce'},{ text: 'NPO法人関西健康・医療学術連絡会', link: 'http://www.khma.jp/' }],
+    links: [
+      {text: '元サイト(khma-covid19.org)', link: 'https://www.khma-covid19.org/'},
+      {text: '元サイトのFacebookページ', link: 'https://www.facebook.com/khmacovid19taskforce'},
+      { text: 'NPO法人関西健康・医療学術連絡会', link: 'http://www.khma.jp/' }
+    ],
     frontline: false,
     ignoreIndex: true,
     title:
@@ -55,7 +59,7 @@ const config = {
     title: '在宅・福祉施設向け 新型コロナウイルス（COVID-19） Q&Aサイト',
     description: 'NPO法人関西健康・医療学術連絡会が2020年4月に公開した在宅・福祉施設向けの「新型コロナウイルス(COVID-19)情報まとめサイト」をもとにして Gatsby.js+Markdownで静的サイトを生成し、GitHubでホストしている保存用サイトです。',
     ogImage: null,
-    docsLocation: 'https://github.com/porolakka/covid19-qa/tree/master/content',
+    docsLocation: 'https://github.com/porolakka/covid19-qa/master/content',
     favicon: 'https://raw.githubusercontent.com/porolakka/covid19-qa/master/src/components/images/favicon.ico?token=ACOPMPJTM26NMH56JV5FB7C7LHNIE',
   },
   pwa: {
