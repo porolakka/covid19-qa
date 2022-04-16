@@ -49,7 +49,7 @@ export default class HTML extends React.Component {
               dangerouslySetInnerHTML={{
                  __html: `
               chatLoader = new QonChatWidgetLoader(
-              'qon-chatwidget-div','https://khma-covid19.qontextual.jp/chat-widget.html?dataset=FAQ',
+              'qon-chatwidget-div','https://khma-covid19.qontextual.jp/chat-widget.html?dataset=khma-covid19-qa',
               {
                   headerBackgroundColor: '#1D3861',
                   bannerImageSrc: './header.jpeg',
