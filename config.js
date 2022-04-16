@@ -52,7 +52,7 @@ const config = {
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://www.khma-covid19.org/'>目次 </a><div class='greenCircle'></div><a href='https://khma-covid19.qontextual.jp/user/dirfaq'>QontextualによるQ&A</a>",
+      "<a href='https://www.khma-covid19.org/'>目次 </a><div class='greenCircle'></div><a href='https://khma-covid19.qontextual.jp/chat.html#khma-covid19-qa'>チャット<br>Qontextual</a>",
   },
   siteMetadata: {
     title: '在宅・福祉施設向け 新型コロナウイルス（COVID-19） Q&Aサイト',
