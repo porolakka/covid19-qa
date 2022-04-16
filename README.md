@@ -5,7 +5,7 @@ NPO法人関西健康・医療学術連絡会が2020年4月に公開した在宅
 * GitHub
   * [porolakka/covid19-qa](https://github.com/porolakka/covid19-qa/)
   * [記事のテキストデータ（Markdown形式)](https://github.com/porolakka/covid19-qa/tree/master/content/)
-* 公開URL [https://covid19-qa.netlify.app/](https://covid19-qa.netlify.app/)
+* 公開URL [https://khma-covid19.org/](https://khma-covid19.org/)
 
 # 使い方
 左のナビゲーションメニューから質問をクリックすると回答が表示されます。  
