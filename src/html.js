@@ -42,6 +42,49 @@ export default class HTML extends React.Component {
             `,
             }}
           />
+          <div id="qon-chatwidget-div"></div>
+          <script type="text/javascript" src="https://khma-covid19.qontextual.jp/chatwidget/qon-chatwidget-loader.js"></script>
+          <script
+              defer
+              dangerouslySetInnerHTML={{
+                 __html: `
+              chatLoader = new QonChatWidgetLoader(
+              'qon-chatwidget-div','https://khma-covid19.qontextual.jp/chat-widget.html?dataset=FAQ',
+              {
+                  headerBackgroundColor: '#1D3861',
+                  bannerImageSrc: './header.jpeg',
+                  fontSource: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap',
+                  fontFamily: 'Noto Sans JP',
+                  greetingMessage: 'ご覧いただき、ありがとうございます。ご質問を選択いただくか、短文で入力し検索してください',
+                  helpfulFeedbackMessage: 'お役に立ててよかったです。',
+                  noResultMessage: '<p>申し訳ございません。お問い合わせページからお問い合わせください。</p>',
+                  backgroundColor: '#FFF',
+                  chatWidgetHeight: 2048,
+                  launcherBackgroundColor: '#1D3861',
+                  launcherMessage: '質問',
+                  sentMessageBackgroundColor: '#1D3861',
+                  sentMessageTextColor: '#FFF',
+                  receivedMessageIconSrc: './chatbot.png',
+                  receivedMessageBackgroundColor: '#f4f7f9',
+                  suggestBackgroundColor: '#FFF',
+                  suggestTextColor: '#000',
+                  suggestHoverColor: 'rgba(29, 56, 97, 0.1)',
+                  suggestAccentColor: '#F5A9A8',
+                  receivedMessageTextColor: '#000',
+                  linkTextColor: '#0000EE',
+                  inputBackgroundColor: '#FFF',
+                  inputTextColor: '#1D3861',
+                  zIndex: '100',
+                  launcherRight: 0,
+                  launcherBottom: 50,
+                  launcherSizeSm: 45,
+                  launcherRightSm: 0,
+                  // llauncherLeftSm: 0,
+                  launcherBottomSm: 50,
+              });
+            `,
+            }}
+          />
         </body>
       </html>
     );
