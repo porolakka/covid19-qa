@@ -43,7 +43,7 @@ export default class HTML extends React.Component {
             `,
             }}
           />
-          <script type="text/javascript" src="`サイトURL`/chatwidget/qon-chatwidget-loader.js"></script>
+          <script type="text/javascript" src="https://khma-covid19.qontextual.jp/chatwidget/qon-chatwidget-loader.js"></script>
           <script>
               chatLoader = new QonChatWidgetLoader(
                 'qon-chatwidget-div','https://khma-covid19.qontextual.jp/chat-widget.html?dataset=FAQ',
