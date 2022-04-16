@@ -52,7 +52,7 @@ export default class HTML extends React.Component {
               'qon-chatwidget-div','https://khma-covid19.qontextual.jp/chat-widget.html?dataset=khma-covid19-qa',
               {
                   headerBackgroundColor: '#1D3861',
-                  bannerImageSrc: './header.jpeg',
+                  bannerImageSrc: 'https://khma-covid19.qontextual.jp/images/chat-icon-default.png',
                   fontSource: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap',
                   fontFamily: 'Noto Sans JP',
                   greetingMessage: 'ご覧いただき、ありがとうございます。ご質問を選択いただくか、短文で入力し検索してください',
@@ -64,7 +64,7 @@ export default class HTML extends React.Component {
                   launcherMessage: '質問',
                   sentMessageBackgroundColor: '#1D3861',
                   sentMessageTextColor: '#FFF',
-                  receivedMessageIconSrc: './chatbot.png',
+                  receivedMessageIconSrc: 'https://khma-covid19.qontextual.jp/images/chatbot.png',
                   receivedMessageBackgroundColor: '#f4f7f9',
                   suggestBackgroundColor: '#FFF',
                   suggestTextColor: '#000',
