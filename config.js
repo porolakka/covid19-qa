@@ -1,7 +1,7 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://covid19-qa.netlify.app/',
+    siteUrl: 'https://khma-covid19.org/',
     gaTrackingId: null,
     trailingSlash: false,
   },
@@ -9,7 +9,7 @@ const config = {
     logo: 'https://user-images.githubusercontent.com/10286653/92694366-e960fe00-f381-11ea-8a92-4dad1146b833.png',
     logoLink: 'https://covid19-qa.netlify.app/',
     title:
-      "<a href='https://covid19-qa.netlify.app/'>新型コロナ情報まとめサイト</a>",
+      "<a href='https://khma-covid19.org/'>新型コロナ情報まとめサイト</a>",
     githubUrl: 'https://github.com/porolakka/covid19-qa/tree/master',
     helpUrl: '',
     tweetText: '',
@@ -46,14 +46,13 @@ const config = {
       '/codeblock', // add trailing slash if enabled above
     ],
     links: [
-      {text: '元サイト(khma-covid19.org)', link: 'https://www.khma-covid19.org/'},
       {text: '元サイトのFacebookページ', link: 'https://www.facebook.com/khmacovid19taskforce'},
       { text: 'NPO法人関西健康・医療学術連絡会', link: 'http://www.khma.jp/' }
     ],
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://www.khma-covid19.org/'>Original </a><div class='greenCircle'></div><a href='https://www.khma-covid19.org/links-1'>Qontextual</a>",
+      "<a href='https://www.khma-covid19.org/'>目次 </a><div class='greenCircle'></div><a href='https://khma-covid19.qontextual.jp/user/dirfaq'>QontextualによるQ&A</a>",
   },
   siteMetadata: {
     title: '在宅・福祉施設向け 新型コロナウイルス（COVID-19） Q&Aサイト',
