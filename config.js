@@ -7,7 +7,7 @@ const config = {
   },
   header: {
     logo: 'https://user-images.githubusercontent.com/10286653/92694366-e960fe00-f381-11ea-8a92-4dad1146b833.png',
-    logoLink: 'https://covid19-qa.netlify.app/',
+    logoLink: 'https://khma-covid19.org/',
     title:
       "<a href='https://khma-covid19.org/'>新型コロナ情報まとめサイト</a>",
     githubUrl: 'https://github.com/porolakka/covid19-qa/tree/master',
