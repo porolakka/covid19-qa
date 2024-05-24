@@ -7,6 +7,8 @@ NPO法人関西健康・医療学術連絡会が2020年4月に公開した在宅
   * [記事のテキストデータ（Markdown形式)](https://github.com/porolakka/covid19-qa/tree/master/content/)
 * 公開URL [https://khma-covid19.org/](https://khma-covid19.org/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3881741d-1aa7-4d4b-a247-b722ec618f09/deploy-status)](https://app.netlify.com/sites/covid19-qa/deploys)
+
 # 使い方
 左のナビゲーションメニューから質問をクリックすると回答が表示されます。  
 スマホの方は左上のアイコン（≡）からメニューを開いてください。  
